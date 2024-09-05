@@ -15,6 +15,7 @@ public class MethodOverload {
     public static double convertToCentimeters (int heightInFeet, int remainingHeightInInches) {
         int totalInches = ((heightInFeet * 12) + remainingHeightInInches);
         return convertToCentimeters(totalInches);
+        // alternative return statement return ((heightInFeet * 12) + remainingHeightInInches);
     }
 
     public static void main(String[] args) {
