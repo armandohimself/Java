@@ -7,7 +7,7 @@ public class SumOddRange {
         //Guard Clause
         if (number < 0) {
             System.out.println("Negative numbers are not allowed");
-            isOdd = false;
+            return false; 
         }
 
         if (number % 2 == 0) {
@@ -22,12 +22,9 @@ public class SumOddRange {
         int sum = 0;
 
         //Guard Clause
-        if (end <= start || start < 0 || end < 0) {
+        if (end < start || start < 0 || end < 0) {
             return -1;
         }
-
-        System.out.println("start: " + start);
-        System.out.println("end: " + end);
 
         for (int i = start; i <= end; i++) {
             if (isOdd(i)) {
