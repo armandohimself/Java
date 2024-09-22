@@ -1,5 +1,7 @@
 package HelloWorld;
 
+import java.util.Scanner;
+
     public class TestingPlayground {
         int num = 1;
         
@@ -24,14 +26,20 @@ package HelloWorld;
             // // Example of equalsIgnoreCase()
             // equalsIgnoreCaseExample();
 
-            int[] myIntArray = new int[]{1, 2, 3, 4, 5};
+            // int[] myIntArray = new int[]{1, 2, 3, 4, 5};
 
-            for(int element : myIntArray) {
-                System.out.println("element: " + element);
-            }
+            // for(int element : myIntArray) {
+            //     System.out.println("element: " + element);
+            // }
 
-            TestingPlayground TP = new TestingPlayground();
-            System.out.println(TP.toString());
+            // TestingPlayground TP = new TestingPlayground();
+            // System.out.println(TP.toString());
+
+            String name = System.console().readLine("Hey what's your name?");
+            System.out.println("Hello " + name);
+
+            Scanner scanner = new Scanner(System.in);
+
         }
     
         // private static void charAtExample() {
