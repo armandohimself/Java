@@ -11,7 +11,7 @@ public class MinMaxChallenge {
     public static void promptUser() {
         Scanner sc = new Scanner(System.in);
         double maxNumber = 0;
-        double lowNumber = 10;
+        double lowNumber = 0;
         double userNumber;
         boolean quitProgram = false;
         int counter = 0;
@@ -22,28 +22,26 @@ public class MinMaxChallenge {
             String userInput = sc.nextLine();
             
             try {
-                counter++;
                 userNumber = Double.parseDouble(userInput);
-
-                if (userNumber < lowNumber) {
+                
+                if (userNumber < lowNumber || counter == 0) {
                     lowNumber = userNumber;
-                } else if (userNumber > lowNumber) {
+                } else if (userNumber > lowNumber || counter == 0) {
                     maxNumber = userNumber;
                 }
-
-                if (counter == 1) {
-                    lowNumber = userNumber;
-                    maxNumber = userNumber;
-                }
-
+                
             } catch (NumberFormatException e) {
                 break;
             }
-
+            
+            counter++;
 
         } while (!quitProgram);
 
-        System.out.println("Min number: " + lowNumber);
-        System.out.println("Max number: " + maxNumber);
+        if (counter > 0) {
+            System.out.println("min = " + lowNumber + ", max = " + maxNumber);
+        } else {
+            System.out.println("No valid data entered");
+        }
     }
 }
