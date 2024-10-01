@@ -3,7 +3,7 @@
 package CodingExercises;
 
 class SwitchStatements {
-    public boolean normalSwitch(String myName) {
+    public boolean throughNormalSwitch(String myName) {
         switch(myName) {
             case "Mando" : {
                 return true;
@@ -17,7 +17,7 @@ class SwitchStatements {
         }
     }
 
-    public boolean advanceSwitch(String myName) {
+    public boolean throughAdvancedSwitch(String myName) {
         return switch(myName) {
             case "Mando", "Armando" -> {
                 yield true;
@@ -31,9 +31,9 @@ class SwitchStatements {
     public static void main(String[] args) {
         SwitchStatements isMyName = new SwitchStatements();
 
-        System.out.println(isMyName.normalSwitch("Terry"));
-        System.out.println(isMyName.advanceSwitch("Bob"));
-        System.out.println(isMyName.normalSwitch("Mando"));
-        System.out.println(isMyName.advanceSwitch("Armando"));
+        System.out.println(isMyName.throughNormalSwitch("Terry"));
+        System.out.println(isMyName.throughAdvancedSwitch("Bob"));
+        System.out.println(isMyName.throughNormalSwitch("Mando"));
+        System.out.println(isMyName.throughAdvancedSwitch("Armando"));
     }
 }
