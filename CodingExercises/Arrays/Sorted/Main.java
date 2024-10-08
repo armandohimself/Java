@@ -28,18 +28,6 @@ public class Main {
         return generatedArr;
     }
 
-    // public static int[] getIntegers(int capacity) {
-        
-    //     int[] array = new int[capacity];
-    //     Scanner scanner = new Scanner(System.in);
-        
-    //     System.out.println("Enter " + capacity + " integer values:\r");
-    //     for (int i=0; i<array.length; i++) {
-    //         array[i] = scanner.nextInt();
-    //     }
-    //     return array;
-    // }
-
     public static void printArray(int[] printArray) {
         for(int i = 0; i < printArray.length; i++) {
             System.out.println(String.format("Element %d contents %d", i, printArray[i]));
@@ -49,6 +37,7 @@ public class Main {
     public static int[] sortIntegers(int[] array) {
 
         int[] sortedArray = Arrays.copyOf(array, array.length);
+        // Copy the array over so that we don't have to worry about the reference 
         boolean flag = true;
         int temp;
 
@@ -56,17 +45,19 @@ public class Main {
 
         while (flag) {
             flag = false;    
+            // Assume the array is sorted
             for(int i = 0; i < sortedArray.length - 1; i++) {
                 if(sortedArray[i] > sortedArray[i + 1]) {
                     temp = sortedArray[i];
 
                     sortedArray[i] = sortedArray[i + 1];
                     sortedArray[i + 1] = temp;
+
+                    // Since we found a case where the array needed to be sorted lets iterate once more just to be sure
                     flag = true;
                 }
             }
         }
-        Arrays.toString(sortedArray);
         return sortedArray;
     }
 }
