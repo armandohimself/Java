@@ -74,45 +74,40 @@ public class Main {
         return MIN_VALUE;
     }
 }
-
-
-
-
-
-// public class Main {
+/*
+ 
+public class MinimumElement {
     
-//     public static void main(String[] args) {
-
-//     }
-
-//     public static int[] readIntegers() {
-//         System.out.println("Enter a list of integers, separated by commas:");
-//         Scanner scanner = new Scanner(System.in);
-//         String input = scanner.nextLine();
-
-//         String[] splits = input.split(",");
-//         int[] values = new int[splits.length];
-
-//         for(int i = 0; i < splits.length; i++) {
-//             values[i] = Integer.parseInt(splits[i].trim());
-//         }
-
-//         scanner.close();
-
-//         return values;
-//     }
-
-
-//     public static int findMin(int[] array) {
-//         int min = Integer.MAX_VALUE;
+    private static int readInteger() {
         
-//         for(int el : array) {
-//             if (el < min) {
-//                 min = el;
-//             }
-//         }
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter count: ");
+        int count = scanner.nextInt();
+        return count;
+    }
+    
+    private static int[] readElements(int count) {
+        
+        Scanner scanner = new Scanner(System.in);
+        int[] array = new int[count];
+        for (int i = 0; i < array.length; i++) {
+            System.out.print("Enter a number: ");
+            int number = scanner.nextInt();
+            array[i] = number;
+        }
+        return array;
+    }
+    
+    private static int findMin(int[] array) {
+ 
+        int cmv = Integer.MAX_VALUE;                 // 1
+        for (int i = 0; i < array.length; i++) {     // 2
+            if (array[i] < cmv) {                    // 3
+                cmv = array[i];                      // 4
+            }     
+        }
+        return cmv;
+    }
+}
 
-//         return min;
-//     }
-
-// }
+ */
