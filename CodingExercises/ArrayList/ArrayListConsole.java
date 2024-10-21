@@ -2,26 +2,44 @@ package CodingExercises.ArrayList;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class ArrayListConsole {
+    private static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        int consoleInput = -1;
 
-        startConsole();
-        consoleInput = getUserConsoleInput();
+        boolean flag = true;
+        ArrayList<String> groceriesList = new ArrayList<>();
 
-        //* Command Routing
-        if (consoleInput == 0) {
-            System.exit(consoleInput);
-        } else if (consoleInput == 1) {
+        while(flag) {
+            // Print the actions the user can take as we loop
+            printActions1();
 
-        } else if (consoleInput == 2) {
-
+            // Command Routing Using Switch
+            try {
+                switch(Integer.parseInt(scanner.nextLine())) {
+                    // The scanner object will read a full line and wait for user to hit enter
+                    case 0 -> System.exit(0);
+                    case 1 -> addItems(groceriesList);
+                    case 2 -> removeItems(groceriesList);
+                    default -> {
+                        System.out.println("Number was not in the options, shutting down now.");
+                        System.out.println("Invalid entry, shutting down now.");
+                        flag = false;
+                    }
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Can't accept type of letters or symbols, shutting down now.");
+                flag = false;
+            }
         }
     }
     
-    
-    private static void startConsole() {
+    //! Print Actions 
+    private static void printActions1() {
         String startMessage = String.format(
             "Available actions:%n" +
             "0 - to shutdown%n" +
@@ -33,36 +51,37 @@ public class ArrayListConsole {
         System.out.println(startMessage);
     }
 
-    private static int getUserConsoleInput() {
-        Scanner scanner = new Scanner(System.in);
-        int input = -1;
+    //! Add Item(s)
+    private static void addItems(ArrayList<String> groceriesList) {
+        System.out.println("Enter grocery item(s) [separate items by comma]: ");
 
-        do {
-            try {
+        String[] groceriesEntered = scanner.nextLine().split(",");
 
-                input = scanner.nextInt();
+        //! The issue with the code below is that it adds all of the items at once including duplicates
+        // groceriesList.addAll(List.of(groceriesEntered));
 
-                if (inputChecker(input)) break; // Exit the loop if a valid integer is entered
-                else {
-                    System.out.println("Please enter a number within the list of available options");
-                }
-            } catch (InputMismatchException e) {
-                System.out.println("Please enter a number");
-                scanner.next();
+        for(String item: groceriesEntered) {
+            String trimmed = item.trim(); // Removes trailing or leading white space
+
+            if(groceriesList.indexOf(trimmed) < 0) { // Returns the position of the first occurence of the specified characters/string in the string (CASE SEN.)
+                // If a -1 is returned, that means that there wasn't a duplicate found in our code so we can add it
+                groceriesList.add(trimmed);
             }
-        } while(scanner.hasNext());
-        
-        scanner.close();
-        
-        return input;
+        }
+
+        System.out.println("Current list now has: " + groceriesList);
     }
 
-    private static boolean inputChecker(int input) {
-        if (input >= 0 && input <= 2) return true;
-        else return false;
+    //! Remove Item(s)
+    private static void removeItems(ArrayList<String> groceriesList) {
+        System.out.println("Enter grocery item(s) [separate items by comma to remove]: ");
+
+        String[] groceriesToRemove = scanner.nextLine().split(",");
+
+        for(String item: groceriesToRemove) {
+            groceriesList.remove(item);
+        }
+
+        System.out.println("Current list now has: " + groceriesList);
     }
-
-    //! Add items to a list
-
-    //! remove items from a list
 }
