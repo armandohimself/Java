@@ -56,6 +56,7 @@ public class ArrayListConsole {
         System.out.println("Enter grocery item(s) [separate items by comma]: ");
 
         String[] groceriesEntered = scanner.nextLine().split(",");
+        // Takes the string and splits it into an array where ever there was a comma
 
         //! The issue with the code below is that it adds all of the items at once including duplicates
         // groceriesList.addAll(List.of(groceriesEntered));
@@ -64,8 +65,9 @@ public class ArrayListConsole {
             String trimmed = item.trim(); // Removes trailing or leading white space
 
             if(groceriesList.indexOf(trimmed) < 0) { // Returns the position of the first occurence of the specified characters/string in the string (CASE SEN.)
-                // If a -1 is returned, that means that there wasn't a duplicate found in our code so we can add it
+                // If a -1 is returned, that means that there wasn't a duplicate found in our code so we can add it (aka if duplicate found, the index that points to it is returned)
                 groceriesList.add(trimmed);
+                // Add the cleaned up item into the array list
             }
         }
 
@@ -79,7 +81,8 @@ public class ArrayListConsole {
         String[] groceriesToRemove = scanner.nextLine().split(",");
 
         for(String item: groceriesToRemove) {
-            groceriesList.remove(item);
+            String trimmed = item.trim();
+            groceriesList.remove(trimmed);
         }
 
         System.out.println("Current list now has: " + groceriesList);
