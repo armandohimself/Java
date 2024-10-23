@@ -82,6 +82,7 @@ public class ArrayListConsole {
 
         for(String item: groceriesToRemove) {
             String trimmed = item.trim();
+            //! NOTE: You still want to clean up all of the users input to future proof the code
             groceriesList.remove(trimmed);
         }
 
