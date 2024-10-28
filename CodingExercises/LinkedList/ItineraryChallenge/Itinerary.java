@@ -1,4 +1,4 @@
-package CodingExercises.LinkedList;
+package CodingExercises.LinkedList.ItineraryChallenge;
 
 import java.util.LinkedList;
 import java.util.List;
