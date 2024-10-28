@@ -9,16 +9,20 @@ public class Contact {
         this.phoneNumber = phoneNumber;
     }
 
-    protected String getName() {
+    public String getName() {
         return name;
     }
 
-    private String getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    private static Contact createContact(String name, String phoneNumber) {
-        Contact contact = new Contact(name, phoneNumber);
-        return contact;
+    public static Contact createContact(String name, String phoneNumber) {
+        return new Contact(name, phoneNumber);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Contact name %s and their phone number: %s", name, phoneNumber);
     }
 }

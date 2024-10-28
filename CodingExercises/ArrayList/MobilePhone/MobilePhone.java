@@ -14,39 +14,95 @@ public class MobilePhone {
     }
 
     public static void main(String[] args) {
+        // Create my phone number object
         MobilePhone meCelly = new MobilePhone("773-365-1010");
+
+        System.out.println(meCelly.myContacts);
+        
+        // Create my contacts
+        Contact mike = new Contact("Mike Lowery", "313-555-5555");
+        Contact mush = new Contact("Shittake Mushroom", "313-555-5555");
+        Contact jesse = new Contact("Jesse Eisinger", "313-555-5555");
+        Contact shirley = new Contact("Shirley Montoya", "313-555-5555");
+        meCelly.addNewContact(mike);
+        meCelly.addNewContact(mush);
+        meCelly.addNewContact(jesse);
+
+        System.out.println(meCelly.findContact(jesse));
+        System.out.println(meCelly.findContact(jesse.getName()));
+        System.out.println(meCelly.updateContact(mush, shirley));
+        //System.out.println(meCelly.removeContact(mike));
+
+        //System.out.println(meCelly.myContacts.toString());
+
+        meCelly.printContacts();
     }
 
-    private boolean addNewContact(Contact contact) {
-        // returns true if contact doesn't exist
-         if(myContacts.indexOf(contact) < 0) return true;
-        else return false;
+    //! Find Contact
+    private int findContact(Contact contact) {
+        if (myContacts.contains(contact)) {
+            return myContacts.indexOf(contact);
+        } else {
+            return -1;
+        }
     }
 
-    private boolean updateContact(Contact oldContact, Contact newContact) {
-        if(addNewContact(newContact)) {
-            myContacts.remove(oldContact);
-            myContacts.add(newContact);
+    //! Find Contact through Name
+    private int findContact(String contactName) {
+        for(int i = 0; i < myContacts.size(); i++) {
+            if(myContacts.get(i).getName().equals(contactName)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    //! Add New Contact
+    public boolean addNewContact(Contact contact) {
+        //Guard Clause
+        if (findContact(contact) < 0) {
+            myContacts.add(contact);
+            return true;
+        } else {
+            System.out.println("Contact already exists in myContacts");
+            return false;
+        }
+    }
+
+    //! Update Contact
+    public boolean updateContact(Contact oldContact, Contact newContact) {
+        if (findContact(oldContact) < 0) {
+            // -1 means the contact is there, nothing to update
+            return false;
+        } else {
+            myContacts.set(findContact(oldContact), newContact);
             return true;
         }
-
-        return false;
     }
 
-    private boolean removeContact(Contact contact) {
-
+    //! Remove Contact
+    public boolean removeContact(Contact contact) {
+        if(findContact(contact) < 0) {
+            System.out.println("Contact was not there");
+            return false;
+        } else {
+            myContacts.remove(contact);
+            return true;
+        }
     }
 
-    private int findContact(Contact contact) {
-        return myContacts.indexOf(contact);
+    //! Query Contact
+    public Contact queryContact(String name) {
+        int contactsIndex = findContact(name);
+        return myContacts.get(contactsIndex);
     }
 
-    private int findContactName(String contactName) {
+    //! Print Contacts
+    public void printContacts() {
+        System.out.println("Contact Lists:");
+        int counter = 1;
         for(int i = 0; i < myContacts.size(); i++) {
-            Contact contact = myContacts.get(i);
-            if(contact.getName().equals(contactName)) {
-
-            }
+            System.out.printf("%d. %s -> %s\n", counter++, myContacts.get(i).getName(), myContacts.get(i).getPhoneNumber());
         }
     }
 }
