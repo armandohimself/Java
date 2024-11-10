@@ -3,8 +3,25 @@ package Week1;
 public class StringMethods {
     public static void main(String[] args) {
         
-        String name = "Armando Arteaga";
+        //String name = "Armando Arteaga";
         String text = "Hello, Java, World!";
+
+        String arr[] = {"Foo", "Bar", "FooBar"};
+
+        if (arr[0].length() < 3) {
+            System.out.println("String length is less than 3");
+        } else if (arr[0].length() <= 3) {
+            System.out.println("I know the length is 3");
+        }
+
+        int x = 5;
+
+        switch(x) {
+            case 6: System.out.println("case 6 ran");
+            default: System.out.println("The default case ran.");
+            case 7: System.out.println("case 7 ran");
+            case 10: System.out.println("case 10 ran");
+        }
 
         // System.out.println(charAt(name));
         // System.out.println(length(name));
@@ -21,9 +38,9 @@ public class StringMethods {
         // System.out.println(replace(name, 'A', 'O'));
         // System.out.println(replaceSequence(name, "Arteaga", "Developer"));
         // System.out.println(equalsIgnoreCase(name, "armando arteaga"));
-        System.out.println(java.util.Arrays.toString(split(text, ",")));
-        System.out.println(java.util.Arrays.toString(splitWithLimit(text, "\\s", 2)));
-        System.out.println(intern(text));
+        // System.out.println(java.util.Arrays.toString(split(text, ",")));
+        // System.out.println(java.util.Arrays.toString(splitWithLimit(text, "\\s", 2)));
+        // System.out.println(intern(text));
         // System.out.println(indexOf(name, 'A'));
         // System.out.println(indexOfFrom(name, 'A', 1));
         // System.out.println(indexOfSubstring(name, "Arteaga"));
@@ -33,7 +50,7 @@ public class StringMethods {
         // System.out.println(toUpperCase(name));
         // System.out.println(toUpperCaseWithLocale(name, java.util.Locale.US));
         // System.out.println(trim("  Hello, World!  "));
-        System.out.println(valueOf(123));
+        // System.out.println(valueOf(123));
     }
 
     public static char charAt(String str) {

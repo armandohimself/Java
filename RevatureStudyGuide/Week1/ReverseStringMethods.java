@@ -1,6 +1,6 @@
 package Week1;
 
-public class ReverseArray {
+public class ReverseStringMethods {
 
     public static void main(String[] args) {
         
