@@ -7,7 +7,7 @@ public class Main {
 }
 
 /*
- * ### Coding Challenge: "User Profile Collector"
+ * ### **Extended Coding Challenge: "User Profile Collector with Custom Exceptions"**
 
 #### Challenge Description:
 Write a program that collects user information to create a "profile" with the following details:
@@ -21,7 +21,18 @@ Once all inputs are collected, the program should display the profile informatio
 
 ---
 
-#### Requirements:
+### **Additional Requirements**
+1. Create a **custom exception** class named `InvalidInputException` that extends `Exception`.
+2. Use the custom exception for specific invalid inputs:
+   - Age: If the age entered is **less than or equal to 0**, throw `InvalidInputException`.
+   - Height: If the height entered is **less than or equal to 0**, throw `InvalidInputException`.
+   - Hobbies: If the hobbies input is empty (e.g., the user presses Enter without typing), throw `InvalidInputException`.
+
+3. Catch the custom exception in your program and handle it by prompting the user to re-enter valid data.
+
+---
+
+#### Requirements Recap:
 1. Use all the common `Scanner` methods:
    - `nextLine()`
    - `next()`
@@ -29,39 +40,55 @@ Once all inputs are collected, the program should display the profile informatio
    - `nextDouble()`
    - `nextBoolean()`
    - `hasNextXXX()` (e.g., `hasNextInt()`, `hasNextDouble()`)
-2. Validate the input wherever possible.
-3. Prompt the user for valid input if they enter something invalid.
+2. Validate the input wherever possible using conditionals (`if`) and `hasNextXXX()` methods.
+3. Integrate the custom exception to manage specific input validation failures.
 
 ---
 
-### Expected Exceptions You May Encounter
-1. **`InputMismatchException`:** When the user enters invalid input for methods like `nextInt()`, `nextDouble()`, or `nextBoolean()`.
-2. **`NoSuchElementException`:** If input is requested but no further input exists (e.g., EOF is reached unexpectedly).
-3. **`IllegalStateException`:** If the `Scanner` object is closed before you attempt to read from it.
+#### Steps to Implement:
+1. **Custom Exception Class**:
+   - Define a class named `InvalidInputException` that inherits from `Exception`.
+   - The exception should take a custom error message as a parameter and pass it to the `Exception` constructor.
+
+2. **Input Validation Logic**:
+   - For **age**, ensure the input is a positive integer. If it’s less than or equal to 0, throw `InvalidInputException`.
+   - For **height**, ensure the input is a positive floating-point number. If it’s less than or equal to 0, throw `InvalidInputException`.
+   - For **hobbies**, ensure the input is not empty or only whitespace. If it’s empty, throw `InvalidInputException`.
+
+3. **Handle Exceptions**:
+   - Use `try-catch` blocks to catch `InvalidInputException` and any standard exceptions (e.g., `InputMismatchException`).
+   - Prompt the user to re-enter valid data when an exception is caught.
+
+4. **Finalize and Display the Profile**:
+   - Once all inputs are successfully validated and collected, display the profile in a formatted way.
 
 ---
 
-### Coding Challenge Details
-Here’s what your program should do:
-1. Prompt the user for their name. Read the full name using `nextLine()`.
-2. Ask the user for their age. Use `nextInt()`, ensuring the input is valid and positive.
-3. Ask for their height in meters. Use `nextDouble()` and validate the input.
-4. Ask for their hobbies as a comma-separated list. Use `nextLine()` after consuming the previous input properly.
-5. Ask if they like Java using `nextBoolean()`. Validate the response.
+### **Expected Exceptions You May Encounter**
+1. **Custom Exception: `InvalidInputException`**:
+   - Thrown when specific validation rules are violated (e.g., invalid age, height, or hobbies).
 
-Finally, display the collected information in a formatted way.
+2. **`InputMismatchException`**:
+   - Occurs when the user enters a value that doesn’t match the expected type for methods like `nextInt()`, `nextDouble()`, or `nextBoolean()`.
+
+3. **`NoSuchElementException`**:
+   - Occurs if input is requested, but no further input is available (e.g., EOF).
+
+4. **`IllegalStateException`**:
+   - Occurs if the `Scanner` is closed before further input is read.
 
 ---
 
 #### Hints to Keep in Mind:
-- You **will encounter exceptions** if the input does not match the expected format for `nextInt`, `nextDouble`, or `nextBoolean`.
-- You may need to clear invalid inputs using `sc.next()` or `sc.nextLine()`.
-- Be cautious about **input skipping issues** when mixing `nextInt()`/`nextDouble()` with `nextLine()`.
+- To avoid `InputMismatchException`, use `hasNextXXX()` methods to check input validity before reading it.
+- To manage input skipping issues (e.g., mixing `nextLine()` with `nextInt()`), clear the buffer by calling `sc.nextLine()` appropriately.
+- Design the custom exception class to take a meaningful error message and use it in your `catch` blocks to give user-friendly feedback.
 
 ---
 
-### Total Exceptions You Might Encounter:
-You will run into **3 main exceptions** (listed above) if you don’t handle edge cases properly. This challenge is designed to test your understanding of handling user input robustly and using `Scanner` methods effectively.
+### Challenge Notes:
+- Use your creativity to decide how to organize the program and where to use custom exceptions versus built-in ones.
+- Aim to write clean, reusable, and maintainable code.
 
-Good luck, and have fun coding! 🚀
+Good luck with your coding challenge! 🚀
  */
