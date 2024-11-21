@@ -1,8 +1,173 @@
 package CodingExercises.Exceptions.UserProfileCollectorProject;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Main {
+    static Scanner sc = new Scanner(System.in);
+    // read input from various sources like keyboard input, files, or strings and System.in is a standard input stream (typically the keyboard).
+    static boolean profileCreated = false;
+
     public static void main(String[] args) {
+        UserProfile user = createProfile();
+        System.out.println(user.toString());
+    }
+
+    public static UserProfile createProfile() {
+        String name = "";
+        int age = -1;
+        float heightInMeters = 0;
+        String[] hobbiesArr = null;
+        boolean likesJava = false;
+
+        while (!profileCreated) {
+            //! If exception thrown, we will pick up where we left off to try again
+            try {
+                if (name.isEmpty()) name = nameInput();
+                if (age == -1) age = ageInput();
+                if (heightInMeters == 0.0f) heightInMeters = heightInMetersInput();
+                if (hobbiesArr == null) hobbiesArr = hobbiesInput();
+                if (!profileCreated) likesJava = likesJavaInput();
+    
+                profileCreated = true; // Set to true after all inputs succeed
+            } catch (InvalidInputException e) {
+                System.out.println("Error: " + e.getMessage());
+            }
+        }
+
+        UserProfile newProfile = new UserProfile(name, age, heightInMeters, hobbiesArr, likesJava);
+        return newProfile;
+    }
+
+    //! Person's Name (case-sentitve; letters & spaces only)
+    public static String nameInput() throws InvalidInputException{
+        boolean isNameValid = false;
+        String name = "";
         
+        System.out.println("Enter the person's name (case-sensitive)");
+        while(!isNameValid) {
+            name = sc.nextLine();
+
+            // Guard Clause: Making sure the string is letters and spaces only
+            if(name.matches("^[a-zA-Z\\s]+$")) {
+                // ^ start of a string, the regex maches any letters or spaces, + ensures one or more valid chars are present, $ is the end of the string
+                System.out.println("You've choosen " + name + " as the name! \nDo you wish to proceed? Y/N");
+                String proceed = sc.nextLine().trim().toUpperCase();
+
+                if(proceed.equals("Y") || proceed.equals("YES")) {
+                    isNameValid = true;
+                } else if (proceed.equals("N") || proceed.equals("NO")) {
+                    throw new InvalidInputException("Name was rejected, let's try again.", null);
+                } else {
+                    System.out.println("Invalid response. Please answer with Y or N.");
+                }
+            } else {
+                throw new InvalidInputException("That is not a valid name. Letters and spaces only accepted.", null);
+            }
+        }
+        return name;
+    }
+
+    //! Person's Age
+    public static int ageInput() throws InvalidInputException {
+        int age = 0;
+        boolean isAge = false;
+
+        System.out.println("What is their age?");
+        while (!isAge) {
+            try {
+                age = Integer.parseInt(sc.nextLine());
+
+                //TODO: Add upper bounds (e.g., reasonable age limits).
+                if (age >= 0) {
+                    isAge = true;
+                } else {
+                    throw new InvalidInputException("You can't be a negative age", null);
+                }
+            } catch (NumberFormatException e) {
+                throw new InvalidInputException("Please enter a valid number!", e);
+            }
+        }        
+        
+        return age;
+    }
+
+    //! Person's Height in Meters (float)
+    public static float heightInMetersInput() throws InvalidInputException{
+        float height = 0.0f;
+        boolean isHeight = false;
+
+        System.out.println("How tall are they in meters");
+        while(!isHeight) {
+            try {
+                height = Float.parseFloat(sc.nextLine());
+
+                //TODO: Add upper bounds (e.g., reasonable height limits).
+                if(height <= 0) {
+                    throw new InvalidInputException("You can't be a negative height", null);
+                } else {
+                    isHeight = true;
+                }
+
+            } catch (NumberFormatException e) {
+                throw new InvalidInputException("That is not a valid number; please input a number.", e);
+            }
+        }
+        return height;
+    }
+
+    //! Person's Hobbies Array
+    public static String[] hobbiesInput() throws InvalidInputException{
+        String hobbiesInput = "";
+        String[] hobbiesArr = null;
+        boolean isHobbies = false;
+
+        System.out.println("Using comma's, what are their hobbies?");
+        while (!isHobbies) {
+            hobbiesInput = sc.nextLine().trim();
+            // remove whitespaces from leading/trailing string 
+
+            // Guard Clause for Empty String
+            if(!hobbiesInput.isEmpty()) {
+
+                //TODO: Allow only alphabetic characters or specific punctuation (e.g., dashes).
+
+                // Proceed to taking the string and splitting it into an array where there are commas
+                hobbiesArr = hobbiesInput.split(",");
+
+                // Guard Clause to make sure the array does contain an empty element
+                for(String hobby: hobbiesArr) {
+                    if(hobby.isEmpty()) {
+                        throw new InvalidInputException("I think you've entered a hobby incorrectly. Make sure it's a list of comma separated values.", null);
+                    }
+                }
+
+                // Array is good we can pass it through 
+                isHobbies = true;
+            } else {
+                throw new InvalidInputException("I'm sure they have at least one hobby! Try again!", null);
+            }
+        }
+        return hobbiesArr;
+    }
+
+    //! Person Likes Java?
+    public static boolean likesJavaInput() throws InvalidInputException{
+        boolean isLikesJavaValid = false;
+        boolean likesJava = false;
+
+        System.out.println("Do they like java? (true/false):");
+        while(!isLikesJavaValid) {
+            String input = sc.nextLine().trim().toLowerCase();
+
+            if(input.equals("true") || input.equals("false")) {
+                likesJava = Boolean.parseBoolean(input);
+                isLikesJavaValid = true;
+            } else {
+                throw new InvalidInputException("You did not type in true or false. Let's try again", null);
+            }
+        }
+        return likesJava;
     }
 }
 
