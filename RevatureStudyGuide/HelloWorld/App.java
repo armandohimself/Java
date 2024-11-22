@@ -1,9 +1,22 @@
 package HelloWorld;
 
 public class App {
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-    }
+    public static void main(String[] args) throws Exception {
+		try {
+			amethod();
+			System.out.println("try ");
+		} catch (Exception e) {
+			System.out.print("catch ");
+		} finally {
+			System.out.print("finally ");
+		}
+
+		System.out.print("out ");
+	}
+
+	public static void amethod() {
+	}
+    
 }
 
 /* //? Why do we need to include package HelloWorld? This was an after thought and was refactored by the extension to include it.
