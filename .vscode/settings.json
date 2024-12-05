@@ -1,3 +1,4 @@
 {
-    "editor.defaultFormatter": "vscjava.vscode-java-pack"
+    "editor.defaultFormatter": "vscjava.vscode-java-pack",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
