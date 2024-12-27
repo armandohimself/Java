@@ -1,3 +1,0 @@
-some string literal that will output to a file
-Array
-array
