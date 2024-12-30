@@ -1,6 +1,6 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.armando.sandbox.Main;
+import com.armando.SocialMedia.Main;
 
 import org.junit.jupiter.api.Test;
 

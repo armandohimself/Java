@@ -31,6 +31,13 @@
             <version>5.0.1</version>
         </dependency>
 
+        <!-- H2 Database -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.2.220</version>
+        </dependency>
+
         <!-- JUnit 5 dependency -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -106,10 +113,11 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.armando.sandbox.Main</mainClass>
+                            <mainClass>com.armando.SocialMedia.Main</mainClass> <!-- Replace with your actual Main class -->
                         </manifest>
                     </archive>
                 </configuration>
+                <!-- END -->
                 <executions>
                     <execution>
                         <id>make-assembly</id>
@@ -120,6 +128,17 @@
                     </execution>
                 </executions>
             </plugin>
+            
+            <!-- Nodemon Script Watcher to Hot Reload Server -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>com.armando.SocialMedia.Main</mainClass> <!-- Replace with your actual Main class -->
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 </project>
