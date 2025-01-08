@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 public class EmployeeConfig {
 
     // Uses Constructor Injection
-    @Bean
+    @Bean (name="myBeanName")
     public EmployeeController employeeController(EmployeeService employeeService) {
         return new EmployeeController(employeeService);
     }
@@ -27,7 +27,18 @@ public class EmployeeConfig {
 }
 
 /*
- * Some Other Annotations
+ * Some Other Annotation(s):
  * @Autowired - Used to inject dependencies in Java-based DI
+ * 
+ * @Bean & Singleton in Spring
+ * When a bean is defined (default singleton), Spring creates a single instance of the bean during container intitialization. 
+ * Spring manages the instance, and every @Autowired injection or context.getBean() call retrieves the same instance.
+ * 
+ * Different Scopes You Can Define:
+ * @Scope("singleton" || [ "prototype" || "request" || "session" || "application" ]) - changes the scope of the Bean
+ * Default is "singleton" and you don't need to define it. 
+ * Example:
+ * @Scope("prototype")
+ * 
  * 
  */
