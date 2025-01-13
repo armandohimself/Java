@@ -18,21 +18,37 @@
 
     <dependencies>
         <!-- Spring Framework -->
-        <dependency>
+        <!-- <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId> <!-- Provides Inversion of Control & Depedency Injection -->
+            <artifactId>spring-core</artifactId> // Provides Inversion of Control & Depedency Injection
             <version>5.3.23</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId> <!--  -->
+            <artifactId>spring-beans</artifactId> // 
             <version>5.3.23</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId> <!-- Access objects defined & managed by Spring -->
+            <artifactId>spring-context</artifactId> //  Access objects defined & managed by Spring
             <version>5.3.23</version>
+        </dependency> -->
+        <!-- Removed because Spring Boot already provides Spring Framework -->
+
+        <!-- Spring Boot - gives us rapid development, embedded server support, & auto config -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>3.2.5</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+
 
         <!-- PostgreSQL JDBC Driver -->
         <dependency>
@@ -104,6 +120,21 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.15.2</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok For annotations to write less boilerplate code -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://central.sonatype.com/artifact/javax.persistence/javax.persistence-api - Was in example from Revature but did not include this -->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version>
+        </dependency>    
     </dependencies>
 
     <build>
@@ -144,6 +175,12 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <!-- Spring Boot Maven Plugin - Added with Spring Boot Dependency for building & running Spring Boot Apps -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             
             <!-- Nodemon Script Watcher to Hot Reload Server -->

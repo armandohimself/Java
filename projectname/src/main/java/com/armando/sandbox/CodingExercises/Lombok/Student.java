@@ -1,5 +1,7 @@
 package com.armando.sandbox.CodingExercises.Lombok;
 
+// Lombok is a Java library that eliminates boilerplate code by auto-generating common methods like getters, setters, constructors, toString(), equals(), & hashCode()
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 

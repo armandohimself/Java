@@ -30,7 +30,7 @@ public class EmployeeConfig {
  * Some Other Annotation(s):
  * @Autowired - Used to inject dependencies in Java-based DI
  * 
- * @Bean & Singleton in Spring
+ * @Bean & Singleton in Springgit 
  * When a bean is defined (default singleton), Spring creates a single instance of the bean during container intitialization. 
  * Spring manages the instance, and every @Autowired injection or context.getBean() call retrieves the same instance.
  * 
