@@ -1,4 +1,4 @@
-package com.armando.sandbox.RevatureStudyGuide.HelloWorld;
+package com.dojo.sandbox.RevatureStudyGuide.HelloWorld;
 
 import java.util.Scanner;
 

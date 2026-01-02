@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Exceptions.UserProfileCollectorProject;
+package com.dojo.sandbox.CodingExercises.Exceptions.UserProfileCollectorProject;
 
 public class InvalidInputException extends Exception {
     //Now that we've extended, this makes our custom exception mandatory to handle

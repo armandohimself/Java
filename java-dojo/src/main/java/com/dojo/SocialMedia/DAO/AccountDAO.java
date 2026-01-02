@@ -1,4 +1,4 @@
-package com.armando.SocialMedia.DAO;
+package com.dojo.SocialMedia.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.armando.SocialMedia.Model.Account;
-import com.armando.SocialMedia.Util.ConnectionUtil;
+import com.dojo.SocialMedia.Model.Account;
+import com.dojo.SocialMedia.Util.ConnectionUtil;
 
 public class AccountDAO {
 

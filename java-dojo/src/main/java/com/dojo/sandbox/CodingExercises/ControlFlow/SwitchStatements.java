@@ -1,6 +1,6 @@
 // Practicing switch statements from memory
 
-package com.armando.sandbox.CodingExercises.ControlFlow;
+package com.dojo.sandbox.CodingExercises.ControlFlow;
 
 class SwitchStatements {
     public boolean throughNormalSwitch(String myName) {

@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Spring.XmlBasedConfig;
+package com.dojo.sandbox.CodingExercises.Spring.XmlBasedConfig;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

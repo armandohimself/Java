@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Arrays.ReverseArrayExamples;
+package com.dojo.sandbox.CodingExercises.Arrays.ReverseArrayExamples;
 
 import java.util.Arrays;
 

@@ -5,7 +5,7 @@
  * which is the default behavior.
  */
 
- package com.armando.sandbox.CodingExercises.StudyHarder;
+ package com.dojo.sandbox.CodingExercises.StudyHarder;
 
 public class DefaultConstructor {
     // Explicit default constructor

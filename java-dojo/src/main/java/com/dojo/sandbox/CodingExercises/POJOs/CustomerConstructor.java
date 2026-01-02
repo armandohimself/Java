@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.POJOs;
+package com.dojo.sandbox.CodingExercises.POJOs;
 
 public class CustomerConstructor {
     private String name;

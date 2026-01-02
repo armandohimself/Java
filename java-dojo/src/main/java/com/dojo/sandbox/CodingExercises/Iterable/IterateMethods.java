@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Iterable;
+package com.dojo.sandbox.CodingExercises.Iterable;
 
 import java.util.Arrays;
 import java.util.Iterator;

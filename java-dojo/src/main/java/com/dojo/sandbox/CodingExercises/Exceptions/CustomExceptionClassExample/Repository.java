@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Exceptions.CustomExceptionClassExample;
+package com.dojo.sandbox.CodingExercises.Exceptions.CustomExceptionClassExample;
 
 public interface Repository {
     void save(String key, String data) throws RepositoryException;

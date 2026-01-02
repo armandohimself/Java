@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Optional.PhoneBook;
+package com.dojo.sandbox.CodingExercises.Optional.PhoneBook;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,5 +1,5 @@
-package com.armando.sandbox.RevatureStudyGuide.Package.mypack;
-import com.armando.sandbox.RevatureStudyGuide.Package.pack.A;  // Correct import for using class A
+package com.dojo.sandbox.RevatureStudyGuide.Package.mypack;
+import com.dojo.sandbox.RevatureStudyGuide.Package.pack.A;  // Correct import for using class A
 
 class B {
     public static void main(String args[]) {

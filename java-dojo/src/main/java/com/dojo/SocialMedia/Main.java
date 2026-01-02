@@ -1,5 +1,5 @@
-package com.armando.SocialMedia;
-import com.armando.SocialMedia.Controller.SocialMediaController;
+package com.dojo.SocialMedia;
+import com.dojo.SocialMedia.Controller.SocialMediaController;
 
 import io.javalin.Javalin;
 

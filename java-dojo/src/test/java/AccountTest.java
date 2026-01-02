@@ -1,6 +1,6 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.armando.sandbox.CodingExercises.TDD.AccountExample.Account;
+import com.dojo.sandbox.CodingExercises.TDD.AccountExample.Account;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Arrays.Arrays2ArrayList;
+package com.dojo.sandbox.CodingExercises.Arrays.Arrays2ArrayList;
 
 import java.util.ArrayList;
 import java.util.Arrays;

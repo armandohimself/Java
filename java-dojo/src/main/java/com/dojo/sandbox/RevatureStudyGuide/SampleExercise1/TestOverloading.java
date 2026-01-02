@@ -1,4 +1,4 @@
-package com.armando.sandbox.RevatureStudyGuide.SampleExercise1;
+package com.dojo.sandbox.RevatureStudyGuide.SampleExercise1;
 
 //Base class
 class Bank {

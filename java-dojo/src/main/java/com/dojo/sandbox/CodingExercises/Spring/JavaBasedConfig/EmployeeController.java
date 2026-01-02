@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Spring.JavaBasedConfig;
+package com.dojo.sandbox.CodingExercises.Spring.JavaBasedConfig;
 
 public class EmployeeController {
     private EmployeeService employeeService;

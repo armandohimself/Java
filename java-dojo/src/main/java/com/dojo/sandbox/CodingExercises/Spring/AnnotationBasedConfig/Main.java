@@ -1,11 +1,11 @@
-package com.armando.sandbox.CodingExercises.Spring.AnnotationBasedConfig;
+package com.dojo.sandbox.CodingExercises.Spring.AnnotationBasedConfig;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
         // 1) Create IoC container & configure by specifying package to find beans
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("com.armando.sandbox.CodingExercises.Spring.AnnotationBasedConfig");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("com.dojo.sandbox.CodingExercises.Spring.AnnotationBasedConfig");
         // The container we created is AnnotationBasedConfig because that's where all of our source files are within
 
         // 2) Get & Use Beans

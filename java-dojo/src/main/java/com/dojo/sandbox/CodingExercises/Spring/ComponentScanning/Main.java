@@ -1,7 +1,7 @@
-package com.armando.sandbox.CodingExercises.Spring.ComponentScanning;
+package com.dojo.sandbox.CodingExercises.Spring.ComponentScanning;
 
-import com.armando.sandbox.CodingExercises.Spring.ComponentScanning.config.AppConfig;
-import com.armando.sandbox.CodingExercises.Spring.ComponentScanning.service.GreetingService;
+import com.dojo.sandbox.CodingExercises.Spring.ComponentScanning.config.AppConfig;
+import com.dojo.sandbox.CodingExercises.Spring.ComponentScanning.service.GreetingService;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

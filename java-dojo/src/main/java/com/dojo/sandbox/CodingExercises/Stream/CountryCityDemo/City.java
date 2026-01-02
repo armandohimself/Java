@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Stream.CountryCityDemo;
+package com.dojo.sandbox.CodingExercises.Stream.CountryCityDemo;
 
 public class City {
     private int id;

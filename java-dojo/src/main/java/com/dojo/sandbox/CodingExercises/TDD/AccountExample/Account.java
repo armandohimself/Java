@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.TDD.AccountExample;
+package com.dojo.sandbox.CodingExercises.TDD.AccountExample;
 
 public class Account {
     private double member;

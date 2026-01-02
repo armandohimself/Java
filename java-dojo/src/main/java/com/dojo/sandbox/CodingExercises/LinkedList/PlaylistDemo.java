@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.LinkedList;
+package com.dojo.sandbox.CodingExercises.LinkedList;
 
 import java.util.LinkedList;
 

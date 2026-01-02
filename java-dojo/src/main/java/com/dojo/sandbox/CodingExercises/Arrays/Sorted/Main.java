@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Arrays.Sorted;
+package com.dojo.sandbox.CodingExercises.Arrays.Sorted;
 
 import java.util.Arrays;
 import java.util.Scanner;

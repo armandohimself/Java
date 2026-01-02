@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Expressions;
+package com.dojo.sandbox.CodingExercises.Expressions;
 
 public class DecimalComparator {
     public static boolean areEqualByThreeDecimalPlaces(double input1, double input2) {

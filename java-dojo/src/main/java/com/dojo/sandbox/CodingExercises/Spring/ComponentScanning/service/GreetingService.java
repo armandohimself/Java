@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Spring.ComponentScanning.service;
+package com.dojo.sandbox.CodingExercises.Spring.ComponentScanning.service;
 
 import org.springframework.stereotype.Service;
 

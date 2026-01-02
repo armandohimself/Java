@@ -1,6 +1,6 @@
 /* https://docs.oracle.com/javase/8/docs/api/ */
 
-package com.armando.sandbox.CodingExercises.ArrayList;
+package com.dojo.sandbox.CodingExercises.ArrayList;
 
 public class ArrayListMethods {
 

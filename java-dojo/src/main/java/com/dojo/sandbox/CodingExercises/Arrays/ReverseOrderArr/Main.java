@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Arrays.ReverseOrderArr;
+package com.dojo.sandbox.CodingExercises.Arrays.ReverseOrderArr;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Inheritance.RectangleExample;
+package com.dojo.sandbox.CodingExercises.Inheritance.RectangleExample;
 
 public class Cuboid extends Rectangle {
     private double height;

@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Inheritance.AnimalExample;
+package com.dojo.sandbox.CodingExercises.Inheritance.AnimalExample;
 
 //! Base class 
 public class Animal {

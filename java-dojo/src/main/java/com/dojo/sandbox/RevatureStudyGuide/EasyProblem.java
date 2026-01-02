@@ -1,4 +1,4 @@
-package com.armando.sandbox.RevatureStudyGuide;
+package com.dojo.sandbox.RevatureStudyGuide;
 
 /*
 **Easy Problem:**

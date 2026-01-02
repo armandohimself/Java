@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.BDD.MockitoExample;
+package com.dojo.sandbox.CodingExercises.BDD.MockitoExample;
 
 public class Pet {
     

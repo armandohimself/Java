@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Inheritance.CylinderExample;
+package com.dojo.sandbox.CodingExercises.Inheritance.CylinderExample;
 
 public class Cylinder extends Circle {
     private double height;

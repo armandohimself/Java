@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.MultiDimensional.MultiDimensionalBreakdown;
+package com.dojo.sandbox.CodingExercises.MultiDimensional.MultiDimensionalBreakdown;
 
 import java.util.Arrays;
 import java.util.ArrayList;

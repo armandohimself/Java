@@ -1,4 +1,4 @@
-package com.armando.sandbox.RevatureStudyGuide.Package.pack;  
+package com.dojo.sandbox.RevatureStudyGuide.Package.pack;  
 public class A{  
   public void msg(){System.out.println("Hello");}  
 }  

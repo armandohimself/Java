@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.ControlFlow;
+package com.dojo.sandbox.CodingExercises.ControlFlow;
 
 public class ifThenElse {
     public static void main(String[] args) {

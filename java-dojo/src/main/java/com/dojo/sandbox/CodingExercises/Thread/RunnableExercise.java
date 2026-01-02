@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Thread;
+package com.dojo.sandbox.CodingExercises.Thread;
 
 import java.util.Random;
 

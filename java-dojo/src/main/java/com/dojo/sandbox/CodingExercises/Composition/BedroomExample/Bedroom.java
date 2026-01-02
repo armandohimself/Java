@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Composition.BedroomExample;
+package com.dojo.sandbox.CodingExercises.Composition.BedroomExample;
 
 public class Bedroom {
     private String name;

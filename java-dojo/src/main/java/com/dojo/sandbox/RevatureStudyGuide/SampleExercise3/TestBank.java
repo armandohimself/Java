@@ -5,7 +5,7 @@ To create an abstract method called getRateOfInterest();
 To create two subclasses called SBI - 7% and PNB - 5% as two banks that extend the abstract class Bank.
 To implement different functionalities for the getRateOfInterest() method in the SBI and PNB classes through the concept of method overriding and print out the interest rate inside the main() method created separately in a test class called TestBank
 */
-package com.armando.sandbox.RevatureStudyGuide.SampleExercise3;
+package com.dojo.sandbox.RevatureStudyGuide.SampleExercise3;
 
 abstract class Bank {
     public int interestRate;

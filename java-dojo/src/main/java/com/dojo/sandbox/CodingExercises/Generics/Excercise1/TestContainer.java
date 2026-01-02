@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Generics.Excercise1;
+package com.dojo.sandbox.CodingExercises.Generics.Excercise1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
