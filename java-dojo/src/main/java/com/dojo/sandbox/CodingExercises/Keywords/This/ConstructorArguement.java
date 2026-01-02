@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Keywords.This;
+package com.dojo.sandbox.CodingExercises.Keywords.This;
 
 class Guest {
     private String name;

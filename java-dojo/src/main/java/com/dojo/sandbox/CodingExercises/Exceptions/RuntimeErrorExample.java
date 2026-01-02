@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Exceptions;
+package com.dojo.sandbox.CodingExercises.Exceptions;
 
 import java.util.Arrays;
 

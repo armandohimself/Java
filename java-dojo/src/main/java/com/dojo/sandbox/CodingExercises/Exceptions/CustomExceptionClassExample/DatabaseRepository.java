@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Exceptions.CustomExceptionClassExample;
+package com.dojo.sandbox.CodingExercises.Exceptions.CustomExceptionClassExample;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

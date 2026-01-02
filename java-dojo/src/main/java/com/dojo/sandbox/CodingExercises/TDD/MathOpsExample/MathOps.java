@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.TDD.MathOpsExample;
+package com.dojo.sandbox.CodingExercises.TDD.MathOpsExample;
 
 public class MathOps {
     public int add(int first, int second) {

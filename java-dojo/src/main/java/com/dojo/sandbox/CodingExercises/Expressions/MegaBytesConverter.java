@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Expressions;
+package com.dojo.sandbox.CodingExercises.Expressions;
 
 public class MegaBytesConverter {
     public static void printMegaBytesAndKiloBytes(int kiloBytes) {

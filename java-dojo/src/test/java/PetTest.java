@@ -3,7 +3,7 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
-import com.armando.sandbox.CodingExercises.BDD.MockitoExample.Pet;
+import com.dojo.sandbox.CodingExercises.BDD.MockitoExample.Pet;
 
 import org.junit.jupiter.api.DisplayName;
 // import org.junit.jupiter.api.BeforeEach;

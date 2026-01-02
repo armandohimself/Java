@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Inheritance.WorkerExample;
+package com.dojo.sandbox.CodingExercises.Inheritance.WorkerExample;
 
 public class Employee extends Worker {
     private long employeeId;

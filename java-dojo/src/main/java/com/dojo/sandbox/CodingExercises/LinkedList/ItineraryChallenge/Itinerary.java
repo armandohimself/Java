@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.LinkedList.ItineraryChallenge;
+package com.dojo.sandbox.CodingExercises.LinkedList.ItineraryChallenge;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,6 +1,6 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.armando.sandbox.CodingExercises.TDD.MathOpsExample.MathOps;
+import com.dojo.sandbox.CodingExercises.TDD.MathOpsExample.MathOps;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;

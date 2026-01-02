@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Spring.AnnotationBasedConfig;
+package com.dojo.sandbox.CodingExercises.Spring.AnnotationBasedConfig;
 
 public class Gallery {
     // fields

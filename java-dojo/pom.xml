@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.armando.sandbox</groupId>
+    <groupId>com.dojo.sandbox</groupId>
     <artifactId>projectname</artifactId>
     <packaging>jar</packaging>
     <version>1.0.0</version>
@@ -130,12 +130,12 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- https://central.sonatype.com/artifact/javax.persistence/javax.persistence-api - Was in example from Revature but did not include this -->
+        <!-- Jakarta Persistence API (use with Jakarta / Spring Boot 3+) -->
         <dependency>
-            <groupId>javax.persistence</groupId>
-            <artifactId>javax.persistence-api</artifactId>
-            <version>2.2</version>
-        </dependency>    
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -161,7 +161,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.armando.SocialMedia.Main</mainClass> <!-- Replace with your actual Main class -->
+                            <mainClass>com.dojo.SocialMedia.Main</mainClass> <!-- Replace with your actual Main class -->
                         </manifest>
                     </archive>
                 </configuration>
@@ -189,7 +189,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <mainClass>com.armando.SocialMedia.Main</mainClass> <!-- Replace with your actual Main class -->
+                    <mainClass>com.dojo.SocialMedia.Main</mainClass> <!-- Replace with your actual Main class -->
                 </configuration>
             </plugin>
 

@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Exceptions.UserProfileCollectorProject;
+package com.dojo.sandbox.CodingExercises.Exceptions.UserProfileCollectorProject;
 
 import java.util.Arrays;
 

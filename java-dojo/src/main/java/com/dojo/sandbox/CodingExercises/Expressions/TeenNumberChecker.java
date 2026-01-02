@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Expressions;
+package com.dojo.sandbox.CodingExercises.Expressions;
 
 public class TeenNumberChecker {
     public static boolean hasTeen (int child1, int child2, int child3) {

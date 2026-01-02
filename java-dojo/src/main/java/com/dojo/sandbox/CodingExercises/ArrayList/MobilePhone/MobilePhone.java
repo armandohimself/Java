@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.ArrayList.MobilePhone;
+package com.dojo.sandbox.CodingExercises.ArrayList.MobilePhone;
 
 import java.util.ArrayList;
 

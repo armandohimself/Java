@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Arrays.SearchingForElement;
+package com.dojo.sandbox.CodingExercises.Arrays.SearchingForElement;
 
 import java.util.Arrays;
 

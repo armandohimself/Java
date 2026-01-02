@@ -1,7 +1,7 @@
-package com.armando.SocialMedia.Controller;
+package com.dojo.SocialMedia.Controller;
 
-import com.armando.SocialMedia.Model.Account;
-import com.armando.SocialMedia.Service.AccountService;
+import com.dojo.SocialMedia.Model.Account;
+import com.dojo.SocialMedia.Service.AccountService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

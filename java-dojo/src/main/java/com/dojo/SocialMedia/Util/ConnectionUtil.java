@@ -1,4 +1,4 @@
-package com.armando.SocialMedia.Util;
+package com.dojo.SocialMedia.Util;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

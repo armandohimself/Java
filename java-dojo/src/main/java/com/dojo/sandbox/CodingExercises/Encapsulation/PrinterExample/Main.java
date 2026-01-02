@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Encapsulation.PrinterExample;
+package com.dojo.sandbox.CodingExercises.Encapsulation.PrinterExample;
 
 public class Main {
     public static void main(String[] args) {

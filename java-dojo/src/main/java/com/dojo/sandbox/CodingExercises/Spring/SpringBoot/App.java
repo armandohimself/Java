@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Spring.SpringBoot;
+package com.dojo.sandbox.CodingExercises.Spring.SpringBoot;
 
 import java.util.Arrays;
 

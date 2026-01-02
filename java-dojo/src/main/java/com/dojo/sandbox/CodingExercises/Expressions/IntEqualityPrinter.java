@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Expressions;
+package com.dojo.sandbox.CodingExercises.Expressions;
 
 public class IntEqualityPrinter {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Expressions;
+package com.dojo.sandbox.CodingExercises.Expressions;
 
 public class PositiveNegativeZero {
     public static void checkNumber (int number) {

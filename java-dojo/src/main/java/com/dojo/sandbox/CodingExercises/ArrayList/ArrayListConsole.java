@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.ArrayList;
+package com.dojo.sandbox.CodingExercises.ArrayList;
 
 import java.util.ArrayList;
 import java.util.Scanner;

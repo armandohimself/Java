@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Inheritance.CylinderExample;
+package com.dojo.sandbox.CodingExercises.Inheritance.CylinderExample;
 
 public class Main {
     public static void main(String[] args) {

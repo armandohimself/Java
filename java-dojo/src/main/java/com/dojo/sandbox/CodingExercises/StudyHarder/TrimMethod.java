@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.StudyHarder;
+package com.dojo.sandbox.CodingExercises.StudyHarder;
 
 public class TrimMethod {
     /* 

@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.ArrayList.ArrayListBreakdown;
+package com.dojo.sandbox.CodingExercises.ArrayList.ArrayListBreakdown;
 
 import java.util.ArrayList;
 import java.util.Comparator;

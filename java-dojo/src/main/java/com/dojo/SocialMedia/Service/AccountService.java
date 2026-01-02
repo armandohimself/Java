@@ -1,7 +1,7 @@
-package com.armando.SocialMedia.Service;
+package com.dojo.SocialMedia.Service;
 
-import com.armando.SocialMedia.DAO.AccountDAO;
-import com.armando.SocialMedia.Model.Account;
+import com.dojo.SocialMedia.DAO.AccountDAO;
+import com.dojo.SocialMedia.Model.Account;
 
 public class AccountService {
     AccountDAO accountDAO; // helps delegate DB operations in Service

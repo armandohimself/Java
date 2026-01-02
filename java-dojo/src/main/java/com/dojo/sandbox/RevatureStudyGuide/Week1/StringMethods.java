@@ -1,4 +1,4 @@
-package com.armando.sandbox.RevatureStudyGuide.Week1;
+package com.dojo.sandbox.RevatureStudyGuide.Week1;
 
 public class StringMethods {
     public static void main(String[] args) {

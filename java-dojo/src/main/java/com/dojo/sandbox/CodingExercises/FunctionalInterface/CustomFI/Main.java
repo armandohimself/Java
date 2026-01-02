@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.FunctionalInterface.CustomFI;
+package com.dojo.sandbox.CodingExercises.FunctionalInterface.CustomFI;
 
 public class Main {
     public static void main(String[] args) {

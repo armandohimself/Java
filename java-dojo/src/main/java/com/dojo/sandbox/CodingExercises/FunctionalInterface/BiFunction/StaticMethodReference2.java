@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.FunctionalInterface.BiFunction;
+package com.dojo.sandbox.CodingExercises.FunctionalInterface.BiFunction;
 
 import java.util.function.BiFunction;
 

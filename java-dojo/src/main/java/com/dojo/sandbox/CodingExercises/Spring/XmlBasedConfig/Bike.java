@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Spring.XmlBasedConfig;
+package com.dojo.sandbox.CodingExercises.Spring.XmlBasedConfig;
 
 public class Bike implements Vehicle{
 

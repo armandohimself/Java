@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.StudyHarder.Inheritence.Casting;
+package com.dojo.sandbox.CodingExercises.StudyHarder.Inheritence.Casting;
 
 public class Vehicle {
     public static void main(String[] args) {

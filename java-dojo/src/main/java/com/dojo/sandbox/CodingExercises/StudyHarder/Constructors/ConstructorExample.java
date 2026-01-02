@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.StudyHarder.Constructors;
+package com.dojo.sandbox.CodingExercises.StudyHarder.Constructors;
 
 public class ConstructorExample {
 

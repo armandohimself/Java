@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Queue;
+package com.dojo.sandbox.CodingExercises.Queue;
 
 import java.util.Arrays;
 import java.util.Collections;

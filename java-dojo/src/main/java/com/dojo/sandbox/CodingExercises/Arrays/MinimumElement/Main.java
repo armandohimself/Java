@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Arrays.MinimumElement;
+package com.dojo.sandbox.CodingExercises.Arrays.MinimumElement;
 
 import java.util.Arrays;
 import java.util.Scanner;

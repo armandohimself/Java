@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Inheritance.BicycleExample;
+package com.dojo.sandbox.CodingExercises.Inheritance.BicycleExample;
 
 public class KidsBicycle extends Bicycle{
     private int NumberOfTrainingWheels;

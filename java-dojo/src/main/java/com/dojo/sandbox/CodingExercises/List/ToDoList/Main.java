@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.List.ToDoList;
+package com.dojo.sandbox.CodingExercises.List.ToDoList;
 
 import java.util.Scanner;
 

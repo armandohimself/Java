@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Spring.JavaBasedConfig;
+package com.dojo.sandbox.CodingExercises.Spring.JavaBasedConfig;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

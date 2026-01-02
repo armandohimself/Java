@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Reflection;
+package com.dojo.sandbox.CodingExercises.Reflection;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

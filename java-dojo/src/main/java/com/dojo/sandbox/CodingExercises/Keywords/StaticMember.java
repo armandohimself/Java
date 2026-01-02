@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Keywords;
+package com.dojo.sandbox.CodingExercises.Keywords;
 
 class Resident {
     int houseNumber; // Instance variable

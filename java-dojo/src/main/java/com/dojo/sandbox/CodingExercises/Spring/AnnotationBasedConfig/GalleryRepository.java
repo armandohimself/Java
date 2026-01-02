@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Spring.AnnotationBasedConfig;
+package com.dojo.sandbox.CodingExercises.Spring.AnnotationBasedConfig;
 
 import org.springframework.stereotype.Repository;
 

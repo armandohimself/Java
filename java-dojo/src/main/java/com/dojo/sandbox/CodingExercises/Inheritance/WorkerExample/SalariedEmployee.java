@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Inheritance.WorkerExample;
+package com.dojo.sandbox.CodingExercises.Inheritance.WorkerExample;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

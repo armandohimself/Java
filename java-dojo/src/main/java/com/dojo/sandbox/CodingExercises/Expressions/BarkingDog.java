@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Expressions;
+package com.dojo.sandbox.CodingExercises.Expressions;
 
 public class BarkingDog {
     public static boolean shouldWakeUp(boolean barking, int hourOfDay) {

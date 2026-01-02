@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Expressions;
+package com.dojo.sandbox.CodingExercises.Expressions;
 
 public class EqualSumChecker {
     public static boolean hasEqualSum(int i, int in, int inp) {

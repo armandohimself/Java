@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Arrays.SortingMethods;
+package com.dojo.sandbox.CodingExercises.Arrays.SortingMethods;
 
 import java.util.Arrays;
 

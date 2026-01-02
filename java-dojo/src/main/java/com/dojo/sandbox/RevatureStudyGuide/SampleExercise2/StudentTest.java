@@ -1,4 +1,4 @@
-package com.armando.sandbox.RevatureStudyGuide.SampleExercise2;
+package com.dojo.sandbox.RevatureStudyGuide.SampleExercise2;
 
 /* 
 Sample Exercise

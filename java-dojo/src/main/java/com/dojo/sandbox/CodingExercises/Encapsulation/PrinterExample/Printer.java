@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Encapsulation.PrinterExample;
+package com.dojo.sandbox.CodingExercises.Encapsulation.PrinterExample;
 
 public class Printer {
     private int tonerLevel;

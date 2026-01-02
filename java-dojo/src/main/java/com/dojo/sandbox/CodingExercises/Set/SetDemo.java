@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.Set;
+package com.dojo.sandbox.CodingExercises.Set;
 
 import java.util.HashSet;
 import java.util.Set;

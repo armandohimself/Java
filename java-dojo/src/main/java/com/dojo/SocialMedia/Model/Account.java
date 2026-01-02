@@ -1,4 +1,4 @@
-package com.armando.SocialMedia.Model;
+package com.dojo.SocialMedia.Model;
 
 import java.sql.Timestamp;
 

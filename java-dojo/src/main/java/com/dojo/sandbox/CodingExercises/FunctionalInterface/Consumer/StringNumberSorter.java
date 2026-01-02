@@ -1,4 +1,4 @@
-package com.armando.sandbox.CodingExercises.FunctionalInterface.Consumer;
+package com.dojo.sandbox.CodingExercises.FunctionalInterface.Consumer;
 
 import java.util.Arrays;
 import java.util.Comparator;
